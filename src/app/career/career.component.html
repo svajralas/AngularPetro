@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+<table class="table" border="1" style="margin-top: 50px;">
+    <thead class="thead-dark">
+    <tr>
+      <th>Id</th>
+      <th>Role</th>
+      <th>Skills</th>
+      <th>Location</th>
+      <th>JobDescription</th>
+      <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let career of careers">
+            
+            <td>{{career.id}}</td>
+            <td>{{career.role}}</td>
+            <td>{{career.skills}}</td>
+            <td>{{career.location}}</td>
+            <td>{{career.jobDescription}}</td>
+            <td><button class="btn btn-danger" (click)="deleteCareer(career)"> Delete Career</button></td>
+            </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>

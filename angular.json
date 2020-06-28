@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CareerApp"
+    }
+  },
+  "defaultProject": "CareerApp",
+  "cli": {
+    "analytics": false
+  }
 }
